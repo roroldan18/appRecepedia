@@ -1,0 +1,20 @@
+<h1>Receta</h1>
+<form (ngSubmit)=guardar()>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" name='nombre' id="nombre" aria-describedby="nombre" [(ngModel)]='receta.nombre' required>
+      <div id="nombre" class="form-text">El nombre no se puede repetir</div>
+    </div>
+    <div class="mb-3">
+      <label for="ingredientes" class="form-label">Ingredientes</label>
+      <textarea class="form-control" name='ingredientes' placeholder="ingredientes" id="ingredientesText" style="height: 100px" aria-describedby="ingredientes" [(ngModel)]='receta.ingredientes' required></textarea>
+      <div id="ingredientes" class="form-text">Pone todos los ingredientes con cantidades</div>
+    </div>
+    <div class="mb-3">
+      <label for="pasos" class="form-label">Pasos</label>
+      <textarea class="form-control" name='pasos' placeholder="ingredientes" id="pasosText" style="height: 100px" aria-describedby="pasos" [(ngModel)]='receta.pasos' required></textarea>
+      <div id="pasos" class="form-text">Paso a paso como se hace tu receta</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

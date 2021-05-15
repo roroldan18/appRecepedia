@@ -1,0 +1,15 @@
+<h1>Login</h1>
+<form (ngSubmit)=login()>
+    <div class="mb-3">
+      <label for="email" class="form-label">Usuario</label>
+      <input type="email" class="form-control" name='email' id="email" aria-describedby="email" [(ngModel)]='usuario.email' required>
+      <div id="email" class="form-text">Ingrese el email</div>
+    </div>
+    <div class="mb-3">
+      <label for="clave" class="form-label">clave</label>
+      <input type="password" class="form-control" name='clave' id="clave" aria-describedby="clave" [(ngModel)]='usuario.clave' required>
+      <div id="clave" class="form-text">Clave</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>

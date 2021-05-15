@@ -1,0 +1,11 @@
+<div class="card" *ngFor="let receta of recetas">
+    <div class="card-header">
+        Receta
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{receta.nombre}}</h5>
+      <p class="card-text">{{receta.ingredientes}}</p>
+      <p class="card-text">{{receta.pasos}}</p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>

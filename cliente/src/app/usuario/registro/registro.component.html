@@ -1,0 +1,26 @@
+<h1>Registrarte</h1>
+<form (ngSubmit)=guardar()>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name='nombre' aria-describedby="nombre" [(ngModel)]='usuario.nombre' required>
+      <div id="nombre" class="form-text">Nombre completo</div>
+    </div>
+    <div class="mb-3">
+      <label for="apellido" class="form-label">apellido</label>
+      <input type="text" class="form-control" id="apellido" aria-describedby="apellido" name='apellido' [(ngModel)]='usuario.apellido' required>
+      <div id="apellido" class="form-text">Apellido</div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="email" name='email' [(ngModel)]='usuario.email' required>
+      <div id="email" class="form-text">El email no se puede repetir</div>
+    </div>
+    <div class="mb-3">
+      <label for="clave" class="form-label">clave</label>
+      <input type="password" class="form-control" id="clave" aria-describedby="clave" name='clave' [(ngModel)]='usuario.clave' required>
+      <div id="clave" class="form-text">Clave</div>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+</form>
